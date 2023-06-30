@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "wagtail-starter"
+version = "0.0"
+description = ""
+authors = ["Max Graw <github@maxgraw.com>"]
+readme = "README.md"
+repository = "https://github.com/maxgraw/wagtail-starter"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+wagtail= "5.0.2"
+wagtailmedia = "0.14.2"
+
+[tool.poetry.group.dev.dependencies]
+black = "23.3.0"
+djhtml = "3.0.6"
+ruff = "0.0.270"
+
+[tool.ruff]
+exclude = ["migrations"]
